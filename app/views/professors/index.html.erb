@@ -1,7 +1,9 @@
 <h1>Professors</h1>
 
-<% @professors.each do |prof| %>
-  <h2><%= prof.name %></h2>
-  <p>Age: <%= prof.age %> | Specialty: <%= prof.specialty %></p>
-  <br>
+<% @professors.each_with_index do |prof, index| %>
+  <div id="professor-<%= index + 1 %>">
+    <h2><%= prof.name %></h2>
+    <p>Age: <%= prof.age %> | Specialty: <%= prof.specialty %></p>
+    <br>
+  </div>
 <% end %>
