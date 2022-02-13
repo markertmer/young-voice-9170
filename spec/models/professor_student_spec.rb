@@ -7,3 +7,4 @@ RSpec.describe ProfessorStudent, type: :model do
     it {should belong_to :student}
   end
 end
+ 
