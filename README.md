@@ -1,3 +1,11 @@
+## Reflections
+   * Overall I feel pretty good about this IC. Nothing in it was too crazy, esp. compared to the project!
+   * I only added one model method, `average_student_age` for `Professor`
+   ** Was wondering if I should have had others for sorting by name, instead of just calling `@professors = Professor.all.order(:name)` in the controller. I didn't do that though, because it seemed like it would be more complicated to define `@professors` in the controller after calling a model method to sort them.
+   ** Was also kind of wondering if it's "proper" to call `average_student_age` on `@professor` from the view... would it be better to do this in the controller and pass an `@average_student_age` variable over to be used in the view? Again, I didn't do this because it seemed like it would be more complicated and not very SRP.
+   * I did all my commits to main. Under non-IC circumstances I would have worked on different branches but for this I just wanted to focus on the code. Hope u aint mad!
+   * Not an actual complaint, but I hate Harris Pottler and all his Dumledork Blifflepiff friends! ...sorry, just had to say that after staring at their names for 2 hrs. I feel better now!
+
 # Hogwarts Again
 
 ## Setup instructions:
