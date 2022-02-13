@@ -1,7 +1,7 @@
 <h1>Students</h1>
 
-<% @students.each do |student| %>
-  <div id="student-<%= student.id %>">
+<% @students.each_with_index do |student, index| %>
+  <div id="student-<%= student.id %>" class="index-<%= index + 1 %>">
     <h2><%= student.name %></h2>
     <p><%= student.professors.count %> professors</p>
   </div>

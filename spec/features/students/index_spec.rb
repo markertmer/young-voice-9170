@@ -43,4 +43,22 @@ RSpec.describe 'Students Index Page' do
     end
   end
 
+  it 'lists students aphabetically by name' do
+    visit '/students'
+
+    within(".index-1") do
+      expect(page).to have_content(@malfoy.name)
+      expect(page).to have_content("2")
+    end
+
+    within(".index-2") do
+      expect(page).to have_content(@harry.name)
+      expect(page).to have_content("3")
+    end
+
+    within(".index-3") do
+      expect(page).to have_content(@longbottom.name)
+      expect(page).to have_content("1")
+    end
+  end
 end
