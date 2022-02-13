@@ -22,7 +22,6 @@ RSpec.describe 'Professors Index Page' do
     expect(page).to have_content(lupin.age)
     expect(page).to have_content(lupin.specialty)
 
-    save_and_open_page
   end
 
 end
